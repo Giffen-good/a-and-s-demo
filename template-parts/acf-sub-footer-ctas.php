@@ -12,7 +12,7 @@
 
   $footer_ctas = array($left_column_cta, $right_column_cta);
   ?>
-  <div class="flex max-w-screen-lg wd-container gap-6 md:gap-16	p-12 justify-center mx-auto flex-wrap md:flex-nowrap">
+  <div class="flex max-w-screen-lg wd-container gap-6 md:gap-16	p-12 py-16 justify-center mx-auto flex-wrap md:flex-nowrap">
     <?php foreach( $footer_ctas as $cta )
     {
       ?>

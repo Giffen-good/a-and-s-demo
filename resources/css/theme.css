@@ -1,0 +1,131 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+html {
+  @apply min-h-full;
+}
+
+.wd-container {
+  @apply mx-auto xl:px-10 w-full md:px-6 px-4;
+}
+.sub-menu {
+  @apply hidden;
+}
+
+/* Utilities */
+
+.common-grid {
+  @apply grid grid-cols-12 gap-4;
+}
+
+.inset-center {
+  @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+.separator {
+  @apply bg-gold h-7 w-px w-px;
+}
+
+.c-underline {
+  @apply border-b-4 border-gold pb-0.5;
+}
+
+.btn {
+  @apply bg-dark-blue px-5 py-3 text-white cursor-pointer uppercase text-lg font-bold;
+}
+.btn.chevron-right {
+  @apply pr-8;
+}
+.btn.chevron-right > * {
+  position: relative;
+}
+.btn.chevron-right > *:after {
+  content: " ";
+  background-image: url("../assets/icon-chevron-right.svg");
+  background-size: 1rem 1rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.screen-reader-text:focus {
+  @apply bg-dark-blue text-white;
+}
+/* Header */
+header .site-branding svg {
+  width: 190px;
+}
+.seach-icon svg {
+  height: 13px;
+  margin-top: 1px;
+}
+nav .separator {
+  @apply ml-2.5 h-3 w-px bg-black;
+}
+
+#primary-menu .menu-item {
+  @apply pl-8;
+}
+.menu-item-has-children > a {
+  @apply relative;
+}
+.menu-item-has-children > a:after {
+  content: " ";
+  background-image: url("../assets/icon-chevron-down.svg");
+  background-size: 0.625rem 0.625rem;
+  height: 0.625rem;
+  width: 0.625rem;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  display: inline-block;
+  left: 108%;
+}
+
+/* footer */
+footer .site-branding:first-child a,
+footer .site-branding:first-child svg {
+  width: 207px;
+}
+footer .site-branding svg,
+footer .site-branding path,
+footer .site-branding polygon {
+  fill: white;
+}
+.giant-logo {
+  opacity: 0.1;
+}
+.sm-nav svg {
+  width: 28px;
+  height: 28px;
+}
+/* 1. sections */
+.hero-container {
+  height: 85vh;
+  height: calc(100vh - 82px);
+}
+.hero-container .separator {
+  width: 3px;
+}
+.horizontal-separator {
+  height: 4px;
+  margin: 30px 0;
+  @apply bg-gold w-full;
+}
+.sub-footer-ctas .horizontal-separator {
+  @apply w-32 left-0 top-0;
+  margin: 22px 0;
+  margin-left: -1.5rem;
+}
+/* 1.1 POSTS */
+.line-flare {
+  @apply bg-gold absolute;
+  width: 4px;
+  left: 10px;
+  height: 4rem;
+  top: -2.5rem;
+}

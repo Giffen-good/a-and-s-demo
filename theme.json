@@ -19,6 +19,11 @@
           "color": "#001E45"
         },
         {
+          "name": "Light Grey",
+          "slug": "light-grey",
+          "color": "#CAD1D4"
+        },
+        {
           "name": "Blue Grey",
           "slug": "blue-grey",
           "color": "#5F7085"

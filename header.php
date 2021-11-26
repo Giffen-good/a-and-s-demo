@@ -32,7 +32,7 @@
 <div id="page" class="site min-h-screen flex flex-col">
 	<a class="dark-blue text-white btn chevron-right skip-link screen-reader-text" href="#primary"><span><?php esc_html_e( 'Skip to content', 'as_demo' ); ?></span></a>
 	<header id="masthead" class="site-header wd-container pb-1.5  bg-white ">
-		<nav id="topbar" class="flex justify-end text-xs pt-1.5 items-center hidden md:flex">
+		<nav id="topbar" class="flex justify-end text-xs pt-1.5 items-center hidden md:flex text-dark-grey">
 			<a href="#"  class="flex items-center search-icon	">
 				<span>
 					<?php echo file_get_contents(get_template_directory_uri() . '/assets/icon-search.svg'); ?>
@@ -61,7 +61,7 @@
 			?>
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation text-sm hidden md:block">
+			<nav id="site-navigation" class="main-navigation text-sm hidden md:block text-dark-blue">
 				<?php
 				wp_nav_menu(
 					array(

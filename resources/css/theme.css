@@ -65,7 +65,8 @@ header .site-branding svg {
   margin-top: 1px;
 }
 nav .separator {
-  @apply ml-2.5 h-3 w-px bg-light-grey;
+  width: 2px;
+  @apply ml-2.5 h-3 bg-light-grey;
 }
 
 #primary-menu .menu-item {
